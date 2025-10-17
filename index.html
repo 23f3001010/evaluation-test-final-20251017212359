@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World Page</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUa6Y5Jp0bJ36sg5f7ipALBciF8U51Iq9OothKymOrg0HIDyQIzXF8YHLetK" crossorigin="anonymous">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+
+        .hello-world {
+            text-align: center;
+            color: #333;
+        }
+        
+        .hello-world h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn-container {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hello-world">
+        <h1>Hello, World!</h1>
+        <p>This is a simple responsive page using Bootstrap 5.</p>
+        <div class="btn-container">
+            <button id="greetButton" class="btn btn-primary">Click Me!</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('greetButton').addEventListener('click', () => {
+            alert('Hello, World!');
+        });
+    </script>
+
+    <!-- Bootstrap 5 JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb4C1GOuZb9oAI7cwMlCZB1wPjvCjI/++cFjXsDbQ6UTb13Pb" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha384-cu1zUXe51Nb0Vxgy0oBuA1q/8rjQQYgngwniutbRowp8Yo0YyBPOc8jPvK1RDYYX" crossorigin="anonymous"></script>
+</body>
+</html>
